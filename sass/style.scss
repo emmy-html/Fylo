@@ -13,6 +13,7 @@ $white: hsl(0, 0%, 100%);
 // gradients
 
 $gradient: linear-gradient(to right, $cyan, $blue);
+$inverse-gradient: linear-gradient(to right, $blue, $cyan);
 
 // fonts
 
@@ -38,13 +39,6 @@ nav {
         display: inline-block;
         padding: 30px 30px 0px 20px;
     }
-    a {
-        text-decoration: none;
-        color: $white;
-    }
-    a:hover {
-        color: $cyan;
-    }
 }
 
 // universal styles
@@ -57,6 +51,15 @@ nav {
 h1 {
     text-align: center;
     font-family: $heading;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.25rem;
 }
 
 .button {
@@ -66,6 +69,18 @@ h1 {
     width: 15%;
     color: $white;
     text-decoration: none;
+}
+.button:hover {
+    background: $inverse-gradient;
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+a:hover {
+    color: $cyan;
 }
 
 // intro
@@ -106,18 +121,155 @@ header {
     justify-content: center;
     width: 100%;
     background-color: $main-background;
+    .box1 {
+        width: 25%;
+        height: 25%;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: center;
+
+        img {
+            margin: 0 auto;
+        }
+        p {
+            padding-bottom: 50px;
+        }
+    }
 }
 
-.box1 {
-    width: 25%;
-    height: 25%;
-    padding-right: 50px;
-    padding-left: 50px;
-    text-align: center;
-    img {
-        margin: 0 auto;
+// second section
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: $main-background;
+    .box2 {
+        align-self: center;
+        width: 35%;
+        height: 100%;
+        padding: 0px 20px 75px 50px;
+        img {
+            width: 100%;
+        }
+        h1 {
+            text-align: left;
+            font-size: 1.60rem;
+            line-height: .50rem;
+            padding-top: 30px;
+        }
+        a {
+            color: $cyan;
+            text-decoration: none;
+        }
+        a:hover {
+            border-bottom: 1px solid $cyan;
+        }
     }
-    p {
-        padding-bottom: 50px;
+}
+
+// third section
+
+.container3 {
+    width: 100%;
+    padding: 50px 0px 150px 0px;
+    background-color: $main-background;
+    background-image: url('../images/bg-quotes.png');
+    background-position: 85px 15px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .box3 {
+        align-self: center;
+        background-color: $intro-background;
+        border-radius: 5px;
+        width: 21%;
+        padding: 25px;
+        img {
+            float: left;
+            border-radius: 50px;
+            width: 15%;
+            height: 15%;
+            margin-right: 15px;
+        }
+        p {
+            padding-bottom: 15px;
+        }
+        .company {
+            font-size: .75rem;
+            line-height: .25rem;
+        }
+    }
+}
+
+// fourth section
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $main-background;
+    width: 100%;
+    .box4 {
+        align-self: center;
+        border-radius: 10px;
+        width: 55%;
+        padding: 40px;
+        background-color: $intro-background;
+    }
+    form {
+        display: inline-flex;
+        position: relative;
+        padding-top: 20px;
+        width: 90%;
+        input[type=email] {
+            border: none;
+            border-radius: 2em;
+            padding: 15px;
+            width: 70%;
+        }
+        
+        input[type=email]:focus {
+            outline: none;
+        }
+        
+        input[type=email]:invalid {
+            border: 1px solid red;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            margin-left: 20px;
+            border: none;
+        }
+    }
+}
+
+// footer
+
+footer {
+    background-color: $footer-background;
+    margin-top: -10%;
+    .content {
+        padding-top: 14%;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        .box5 {
+            width: 60%;
+            align-self: center;
+            padding: 40px;
+        }
+    }
+    .attribution {
+        padding-top: 20px;
+        text-align: center;
+        background-color: $intro-background;
     }
 }
