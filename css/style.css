@@ -1,4 +1,16 @@
 body {
-  background-color: #181f2a; }
+  margin: 0 auto;
+  background: #181f2a;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
+
+h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+header {
+  margin: 0 auto;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
