@@ -101,6 +101,9 @@ header {
     padding: 0px 20px 75px 50px; }
     .container2 .box2 img {
       width: 100%; }
+    .container2 .box2 img.override {
+      width: auto;
+      height: auto; }
     .container2 .box2 h1 {
       text-align: left;
       font-size: 1.60rem;
@@ -127,7 +130,8 @@ header {
     background-color: #1c2431;
     border-radius: 5px;
     width: 21%;
-    padding: 25px; }
+    padding: 25px;
+    box-shadow: 0px 4px 10px #1c2431; }
     .container3 .box3 img {
       float: left;
       border-radius: 50px;
@@ -152,7 +156,8 @@ header {
     border-radius: 10px;
     width: 55%;
     padding: 40px;
-    background-color: #1c2431; }
+    background-color: #1c2431;
+    box-shadow: 0px 4px 10px black; }
   .container4 form {
     display: inline-flex;
     position: relative;
@@ -175,17 +180,23 @@ header {
 footer {
   background-color: #0b1523;
   margin-top: -10%; }
+  footer img {
+    padding-right: 10px; }
   footer .content {
-    padding-top: 14%; }
+    padding-top: 15%; }
   footer .footer-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%; }
+    justify-content: space-around;
+    line-height: 2.50rem;
+    padding: 0px 0px 70px 0px; }
     footer .footer-content .box5 {
-      width: 60%;
-      align-self: center;
-      padding: 40px; }
+      align-self: flex-start;
+      width: 2fr 1fr; }
+      footer .footer-content .box5 p {
+        line-height: .50rem; }
+      footer .footer-content .box5 i {
+        padding-right: 10px; }
   footer .attribution {
     padding-top: 20px;
     text-align: center;
