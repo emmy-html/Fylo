@@ -275,6 +275,8 @@ footer {
       flex-direction: column;
       padding-left: 50px; }
       footer .footer-content .box5 {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+      footer .footer-content .socials {
+        margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
