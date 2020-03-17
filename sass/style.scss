@@ -74,9 +74,7 @@ p {
     color: $white;
     text-decoration: none;
 }
-
 .button:hover {
-    background: $inverse-gradient;
     color: $white;
 }
 
@@ -150,6 +148,7 @@ header {
     justify-content: center;
     width: 100%;
     background-color: $main-background;
+    padding-top: 50px;
     .box2 {
         align-self: center;
         width: 35%;
